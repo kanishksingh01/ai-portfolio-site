@@ -2,7 +2,7 @@
 
 Personal developer portfolio showcasing a 10-week AI project series focused on DevOps, SRE, and infrastructure automation.
 
-**Live:** [Deployed on Vercel](#) *(link updated after deployment)*
+**Live:** [ai-portfolio-site-psi.vercel.app](https://ai-portfolio-site-psi.vercel.app)
 
 ## Overview
 
