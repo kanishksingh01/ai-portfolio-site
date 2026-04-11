@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const navLinks = [
@@ -11,12 +11,28 @@ const navLinks = [
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
+    <header
+      className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+        scrolled
+          ? "border-white/10 bg-[#050A15]/90 backdrop-blur-lg shadow-lg shadow-black/20"
+          : "border-transparent bg-transparent"
+      }`}
+    >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-mono text-lg font-bold tracking-tight">
-          KS<span className="text-emerald-400">.</span>
+        <Link
+          href="/"
+          className="font-mono text-lg font-bold tracking-tight transition-colors hover:text-white"
+        >
+          KS<span className="text-green-400 glow-green">.</span>
         </Link>
 
         {/* Desktop nav */}
@@ -25,7 +41,7 @@ export function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-zinc-400 transition-colors hover:text-white"
+                className="text-sm text-slate-400 transition-colors duration-200 hover:text-white"
               >
                 {link.label}
               </a>
@@ -35,7 +51,7 @@ export function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="sm:hidden text-zinc-400 hover:text-white"
+          className="cursor-pointer sm:hidden text-slate-400 hover:text-white transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -65,12 +81,12 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <ul className="flex flex-col gap-4 border-t border-white/10 px-6 py-4 sm:hidden">
+        <ul className="flex flex-col gap-4 border-t border-white/10 bg-[#050A15]/95 backdrop-blur-lg px-6 py-4 sm:hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-zinc-400 transition-colors hover:text-white"
+                className="text-sm text-slate-400 transition-colors duration-200 hover:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
