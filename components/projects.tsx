@@ -14,11 +14,12 @@ const projects = [
   },
   {
     week: 2,
-    title: "AI Data Dashboard",
+    title: "Claude Skills Ranking Dashboard",
     description:
-      "Interactive data visualization dashboard with AI-powered insights and real-time charts.",
-    tags: ["Next.js", "Charts", "AI"],
-    status: "upcoming" as const,
+      "Ranks Claude Code skill repos from GitHub by usefulness and 90-day star momentum. Each card links straight to source.",
+    tags: ["Next.js", "GitHub API", "ISR"],
+    status: "live" as const,
+    repo: "https://github.com/kanishksingh01/claude-skills-dashboard",
   },
   {
     week: 3,
@@ -30,10 +31,10 @@ const projects = [
   },
   {
     week: 4,
-    title: "Skills & MCP Dashboard",
+    title: "AI Data Dashboard",
     description:
-      "Dashboard for managing AI model capabilities, skills, and MCP server integrations.",
-    tags: ["MCP", "Dashboard", "AI"],
+      "Interactive data visualization dashboard with AI-powered insights and real-time charts.",
+    tags: ["Next.js", "Charts", "AI"],
     status: "upcoming" as const,
   },
   {
