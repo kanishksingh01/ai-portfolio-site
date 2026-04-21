@@ -23,11 +23,12 @@ const projects = [
   },
   {
     week: 3,
-    title: "Cybersecurity Scanner",
+    title: "CyberScan — Local Security Scanner",
     description:
-      "Web vulnerability scanner with automated reporting and remediation suggestions.",
-    tags: ["Security", "Scanning", "Reports"],
-    status: "upcoming" as const,
+      "Scans your local machine for open ports, SSH misconfig, firewall gaps, pending updates, risky services, and file permission issues. Scores 0–100.",
+    tags: ["Security", "Node.js", "Linux"],
+    status: "live" as const,
+    repo: "https://github.com/kanishksingh01/cybersecurity-scanner",
   },
   {
     week: 4,
