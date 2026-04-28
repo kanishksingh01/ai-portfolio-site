@@ -32,9 +32,9 @@ const projects = [
   },
   {
     week: 4,
-    title: "AI GitHub Trends",
+    title: "AI Ecosystem Radar",
     description:
-      "Real-time dashboard tracking the fastest-growing AI repositories on GitHub — trending this week and all-time leaders.",
+      "GitHub's trending page shows one category at a time. This aggregates six AI topic categories simultaneously, deduplicates, and surfaces what's actually moving.",
     tags: ["Next.js", "GitHub API", "Recharts"],
     status: "live" as const,
     url: "https://ai-data-dashboard-two.vercel.app",
