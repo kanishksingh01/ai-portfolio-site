@@ -32,11 +32,13 @@ const projects = [
   },
   {
     week: 4,
-    title: "AI Data Dashboard",
+    title: "AI GitHub Trends",
     description:
-      "Interactive data visualization dashboard with AI-powered insights and real-time charts.",
-    tags: ["Next.js", "Charts", "AI"],
-    status: "upcoming" as const,
+      "Real-time dashboard tracking the fastest-growing AI repositories on GitHub — trending this week and all-time leaders.",
+    tags: ["Next.js", "GitHub API", "Recharts"],
+    status: "live" as const,
+    url: "https://ai-data-dashboard-two.vercel.app",
+    repo: "https://github.com/kanishksingh01/ai-data-dashboard",
   },
   {
     week: 5,
