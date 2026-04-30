@@ -47,9 +47,11 @@ const projects = [
     week: 5,
     title: "IaC Generator",
     description:
-      "Natural language to Terraform — generate infrastructure-as-code from plain English descriptions.",
-    tags: ["Terraform", "NLP", "IaC"],
-    status: "upcoming" as const,
+      "Type plain English. Get production-ready Terraform for AWS, GCP, or Azure — broken down into root module plus child modules. Runs 100% locally via Ollama.",
+    tags: ["Terraform", "Ollama", "Multi-Cloud"],
+    status: "live" as const,
+    url: "https://iac-generator.vercel.app",
+    repo: "https://github.com/kanishksingh01/iac-generator",
   },
   {
     week: 6,
