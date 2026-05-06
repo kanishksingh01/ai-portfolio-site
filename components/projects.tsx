@@ -35,10 +35,10 @@ const projects = [
   },
   {
     week: 4,
-    title: "AI Ecosystem Radar",
+    title: "GitHub Trending Radar",
     description:
-      "GitHub's trending page shows one category at a time. This aggregates six AI topic categories simultaneously, deduplicates, and surfaces what's actually moving.",
-    tags: ["Next.js", "GitHub API", "Recharts"],
+      "Filter trending GitHub repos by category (AI, DevOps, Web, CLI, Security), language, and time period. Aggregates multiple topic searches and deduplicates in real time.",
+    tags: ["Next.js", "GitHub API", "ISR"],
     status: "live" as const,
     url: "https://ai-data-dashboard-two.vercel.app",
     repo: "https://github.com/kanishksingh01/ai-data-dashboard",
@@ -55,11 +55,13 @@ const projects = [
   },
   {
     week: 6,
-    title: "RAG Knowledge Base",
+    title: "BashForge",
     description:
-      "Retrieval-augmented generation system for querying documentation and knowledge bases.",
-    tags: ["RAG", "Embeddings", "Search"],
-    status: "upcoming" as const,
+      "Describe any automation task in plain English and get a production-ready bash script instantly. Supports dry-run mode, OS targeting, and inline explanations. Powered by Groq.",
+    tags: ["Bash", "Groq", "LLM"],
+    status: "live" as const,
+    url: "https://bash-script-gen.vercel.app",
+    repo: "https://github.com/kanishksingh01/bash-script-gen",
   },
   {
     week: 7,
